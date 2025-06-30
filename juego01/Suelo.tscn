@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhml14eiuxa5y"]
+
+[ext_resource type="Texture2D" uid="uid://c1c72u6mkgh85" path="res://kenney_new-platformer-pack-1.0/Sprites/Tiles/Default/terrain_stone_horizontal_middle.png" id="1_jj4ox"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_soi0b"]
+size = Vector2(492.628, 20)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="TerrainStoneHorizontalMiddle" type="Sprite2D" parent="."]
+position = Vector2(-78, 0)
+texture = ExtResource("1_jj4ox")
+
+[node name="TerrainStoneHorizontalMiddle2" type="Sprite2D" parent="."]
+position = Vector2(-142, 0)
+texture = ExtResource("1_jj4ox")
+
+[node name="TerrainStoneHorizontalMiddle3" type="Sprite2D" parent="."]
+position = Vector2(325, 0)
+texture = ExtResource("1_jj4ox")
+
+[node name="TerrainStoneHorizontalMiddle4" type="Sprite2D" parent="."]
+position = Vector2(-206, 0)
+texture = ExtResource("1_jj4ox")
+
+[node name="Stone1" type="Sprite2D" parent="."]
+position = Vector2(-1.74992, 0)
+scale = Vector2(1.44531, 1)
+texture = ExtResource("1_jj4ox")
+
+[node name="TerrainStoneHorizontalMiddle5" type="Sprite2D" parent="."]
+position = Vector2(261, 0)
+texture = ExtResource("1_jj4ox")
+
+[node name="TerrainStoneHorizontalMiddle6" type="Sprite2D" parent="."]
+position = Vector2(-270, 0)
+texture = ExtResource("1_jj4ox")
+
+[node name="TerrainStoneHorizontalMiddle8" type="Sprite2D" parent="."]
+position = Vector2(-326, 0)
+texture = ExtResource("1_jj4ox")
+
+[node name="TerrainStoneHorizontalMiddle7" type="Sprite2D" parent="."]
+position = Vector2(197, 0)
+texture = ExtResource("1_jj4ox")
+
+[node name="TerrainStoneHorizontalMiddle9" type="Sprite2D" parent="."]
+position = Vector2(133, 0)
+texture = ExtResource("1_jj4ox")
+
+[node name="TerrainStoneHorizontalMiddle10" type="Sprite2D" parent="."]
+position = Vector2(77, 0)
+texture = ExtResource("1_jj4ox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6.67572e-06, -17.9211)
+scale = Vector2(1.44531, 1)
+shape = SubResource("RectangleShape2D_soi0b")
+one_way_collision = true

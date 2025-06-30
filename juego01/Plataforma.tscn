@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkco6veniq5vg"]
+
+[ext_resource type="Texture2D" uid="uid://c1c72u6mkgh85" path="res://kenney_new-platformer-pack-1.0/Sprites/Tiles/Default/terrain_stone_horizontal_middle.png" id="1_d1amd"]
+[ext_resource type="Texture2D" uid="uid://dpcrcq3qr051g" path="res://kenney_new-platformer-pack-1.0/Sprites/Tiles/Default/terrain_stone_horizontal_overhang_right.png" id="2_2t0ux"]
+[ext_resource type="Texture2D" uid="uid://2tplitmlnc0o" path="res://kenney_new-platformer-pack-1.0/Sprites/Tiles/Default/terrain_stone_horizontal_overhang_left.png" id="3_2srlq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_soi0b"]
+size = Vector2(145.297, 20)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Centro Stone" type="Sprite2D" parent="."]
+position = Vector2(-1.74992, 0)
+scale = Vector2(1.44531, 1)
+texture = ExtResource("1_d1amd")
+
+[node name="TerrainStoneHorizontalOverhangLeft" type="Sprite2D" parent="."]
+position = Vector2(-81, 0)
+texture = ExtResource("3_2srlq")
+
+[node name="TerrainStoneHorizontalOverhangRight" type="Sprite2D" parent="."]
+position = Vector2(69, 0)
+texture = ExtResource("2_2t0ux")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6, -17.9211)
+scale = Vector2(1.44531, 1)
+shape = SubResource("RectangleShape2D_soi0b")
+one_way_collision = true

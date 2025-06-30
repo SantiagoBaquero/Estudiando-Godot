@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdxsr31lk643a"]
+
+[ext_resource type="Texture2D" uid="uid://bmo5vvc0idifd" path="res://kenney_new-platformer-pack-1.0/Sprites/Enemies/Double/saw_a.png" id="1_7c5v0"]
+[ext_resource type="Script" uid="uid://d20beskmb0qtb" path="res://eliminar_saw.gd" id="1_ddabk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ddabk"]
+radius = 52.0865
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = ExtResource("1_ddabk")
+
+[node name="SawA" type="Sprite2D" parent="."]
+position = Vector2(0, -3.448)
+scale = Vector2(0.427, 0.414875)
+texture = ExtResource("1_7c5v0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+scale = Vector2(0.427, 0.361)
+shape = SubResource("CircleShape2D_ddabk")

@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://coj2hreso445k"]
+
+[ext_resource type="Texture2D" uid="uid://blkv3sacfpxu6" path="res://kenney_new-platformer-pack-1.0/Sprites/Tiles/Default/bridge_logs.png" id="1_l2auo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_soi0b"]
+size = Vector2(434.337, 20)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="BridgeLogs" type="Sprite2D" parent="."]
+scale = Vector2(1.39063, 1)
+texture = ExtResource("1_l2auo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BridgeLogs"]
+position = Vector2(1.43818, -17.9211)
+shape = SubResource("RectangleShape2D_soi0b")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="BridgeLogs" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-89, 0)
+scale = Vector2(1.39063, 1)
+texture = ExtResource("1_l2auo")
+
+[node name="BridgeLogs2" type="Sprite2D" parent="."]
+position = Vector2(87, 0)
+scale = Vector2(1.39063, 1)
+texture = ExtResource("1_l2auo")
+
+[node name="BridgeLogs3" type="Sprite2D" parent="."]
+position = Vector2(-177, 0)
+scale = Vector2(1.39063, 1)
+texture = ExtResource("1_l2auo")
+
+[node name="BridgeLogs4" type="Sprite2D" parent="."]
+position = Vector2(175, 0)
+scale = Vector2(1.39063, 1)
+texture = ExtResource("1_l2auo")
+
+[node name="BridgeLogs5" type="Sprite2D" parent="."]
+position = Vector2(263, 0)
+scale = Vector2(1.39063, 1)
+texture = ExtResource("1_l2auo")
+
+[node name="BridgeLogs6" type="Sprite2D" parent="."]
+position = Vector2(-261, 0)
+scale = Vector2(1.39063, 1)
+texture = ExtResource("1_l2auo")
