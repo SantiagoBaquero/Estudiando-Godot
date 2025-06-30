@@ -3,13 +3,12 @@ extends Node2D
 
 @onready var animation_player= $AnimationPlayer
 
-const ESCENA_SAW = preload("res://bomb.tscn")
+const ESCENA_BOMB = preload("res://bomb.tscn")	
 
-	
-func launch_saw():
-	var instancia_saw = ESCENA_SAW.instantiate()
-	instancia_saw.position =$BarnacleAttackA/SnailShell/Bomb4.position
-	add_child(instancia_saw)
+func launch_bomb():
+	var instancia_bomb = ESCENA_BOMB.instantiate()
+	instancia_bomb.position =$BarnacleAttackA/SnailShell.position
+	add_child(instancia_bomb)
 	animation_player.play("Reposo")
 
 func _on_timer_timeout():
