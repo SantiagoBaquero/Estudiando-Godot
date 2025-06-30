@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dn35accdgwkjh"]
+[gd_scene load_steps=11 format=3 uid="uid://dn35accdgwkjh"]
 
 [ext_resource type="Texture2D" uid="uid://ct585jkfuvewv" path="res://kenney_new-platformer-pack-1.0/Sprites/Backgrounds/Default/background_clouds.png" id="1_h0wtr"]
 [ext_resource type="Texture2D" uid="uid://b0o736jc4i5j6" path="res://kenney_new-platformer-pack-1.0/Sprites/Tiles/Double/cactus.png" id="1_kd3qp"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dkco6veniq5vg" path="res://Plataforma.tscn" id="2_320mp"]
 [ext_resource type="PackedScene" uid="uid://bdxsr31lk643a" path="res://saw.tscn" id="3_kd3qp"]
 [ext_resource type="PackedScene" uid="uid://bhshlfkqam5sh" path="res://personaje_principal.tscn" id="4_6epq6"]
+[ext_resource type="Texture2D" uid="uid://c803srsofoox8" path="res://kenney_new-platformer-pack-1.0/Sprites/Tiles/Double/door_open_top.png" id="4_34yp4"]
 [ext_resource type="Script" uid="uid://csgsgko3ndynu" path="res://CamaraConfi.gd" id="7_6epq6"]
 [ext_resource type="PackedScene" uid="uid://b0conm008atf8" path="res://Jefe.tscn" id="8_vfns5"]
 
@@ -15,86 +16,93 @@
 [node name="Decora" type="Node2D" parent="."]
 
 [node name="BackgroundClouds" type="Sprite2D" parent="Decora"]
-position = Vector2(1056.5, 385)
-scale = Vector2(8.24609, 3.53906)
+position = Vector2(508.5, 387.5)
+scale = Vector2(5.58203, 3.55859)
 texture = ExtResource("1_h0wtr")
 
-[node name="BackgroundClouds2" type="Sprite2D" parent="Decora"]
-position = Vector2(-984, 388)
-scale = Vector2(8.2461, 3.53906)
+[node name="BackgroundClouds3" type="Sprite2D" parent="Decora"]
+position = Vector2(1830, 388)
+scale = Vector2(4.77344, 3.55859)
 texture = ExtResource("1_h0wtr")
 
 [node name="Cactus2" type="Sprite2D" parent="Decora"]
-position = Vector2(761, 602)
+position = Vector2(1192, 608)
 scale = Vector2(0.5, 0.523438)
 texture = ExtResource("1_kd3qp")
 
 [node name="Cactus" type="Sprite2D" parent="Decora"]
-position = Vector2(1006, 565.268)
+position = Vector2(678, 672)
+rotation = -0.120428
 scale = Vector2(0.390625, 0.519806)
 texture = ExtResource("1_kd3qp")
 
 [node name="Cactus3" type="Sprite2D" parent="Decora"]
-position = Vector2(1235, 550)
+position = Vector2(929, 639)
+rotation = -0.120428
 scale = Vector2(0.5, 0.523438)
 texture = ExtResource("1_kd3qp")
 
 [node name="Chain" type="Sprite2D" parent="Decora"]
-position = Vector2(354.5, 594)
+position = Vector2(805.5, 594)
 scale = Vector2(1.10156, 1.5625)
 texture = ExtResource("2_6epq6")
 
 [node name="Chain2" type="Sprite2D" parent="Decora"]
-position = Vector2(617, 583.5)
+position = Vector2(1068, 583.5)
 scale = Vector2(0.96875, 1.24219)
 texture = ExtResource("2_6epq6")
+
+[node name="DoorOpenTop" type="Sprite2D" parent="Decora"]
+position = Vector2(211, 664)
+texture = ExtResource("4_34yp4")
+
+[node name="StaticBody2D" parent="Decora" instance=ExtResource("2_320mp")]
+position = Vector2(217, 760)
 
 [node name="Suelo" type="Node2D" parent="."]
 
 [node name="Suelo1" parent="Suelo" instance=ExtResource("1_m2gv8")]
-position = Vector2(377, 713)
-rotation = -0.127409
-
-[node name="StaticBody2D2" parent="Suelo" instance=ExtResource("1_m2gv8")]
-position = Vector2(1073, 623)
+position = Vector2(828, 713)
 rotation = -0.127409
 
 [node name="SueloEle" parent="Suelo" instance=ExtResource("1_m2gv8")]
-position = Vector2(1664, 251)
+position = Vector2(2105, 207)
 rotation = -0.127409
 
 [node name="Plataforma" type="Node2D" parent="."]
 
 [node name="StaticBody2D3" parent="Plataforma" instance=ExtResource("2_320mp")]
-position = Vector2(357, 518)
+position = Vector2(808, 518)
 
 [node name="StaticBody2D4" parent="Plataforma" instance=ExtResource("2_320mp")]
-position = Vector2(620, 509)
+position = Vector2(1071, 509)
 rotation = -0.253073
 
 [node name="StaticBody2D5" parent="Plataforma" instance=ExtResource("2_320mp")]
-position = Vector2(1138, 369)
+position = Vector2(1560, 333)
+rotation = -0.253073
 
 [node name="StaticBody2D6" parent="Plataforma" instance=ExtResource("2_320mp")]
-position = Vector2(884, 452)
+position = Vector2(1322, 421)
 rotation = -0.506145
 
 [node name="Obstaculo" type="Node2D" parent="."]
 
 [node name="RigidBody2D" parent="Obstaculo" instance=ExtResource("3_kd3qp")]
-position = Vector2(640, 328)
+position = Vector2(1197, 543)
 
 [node name="RigidBody2D2" parent="Obstaculo" instance=ExtResource("3_kd3qp")]
-position = Vector2(919, 46)
+position = Vector2(2278, 49)
 
 [node name="PersonajePrincipal" parent="." instance=ExtResource("4_6epq6")]
-position = Vector2(103, 628)
+position = Vector2(208, 660)
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("object_to_follow")]
-position = Vector2(176, 328)
+position = Vector2(210, 664)
+rotation = 2.30451
 limit_left = -1
 limit_top = 0
-limit_bottom = 10000
+limit_bottom = 1000
 script = ExtResource("7_6epq6")
 object_to_follow = NodePath("../PersonajePrincipal")
 
@@ -102,7 +110,7 @@ object_to_follow = NodePath("../PersonajePrincipal")
 position = Vector2(1666, -4)
 
 [node name="RigidBody2D" parent="." instance=ExtResource("3_kd3qp")]
-position = Vector2(374, 293)
+position = Vector2(825, 293)
 
 [node name="RigidBody2D2" parent="." instance=ExtResource("3_kd3qp")]
-position = Vector2(1357, 446)
+position = Vector2(1129, 342)

@@ -8,41 +8,35 @@ size = Vector2(434.337, 20)
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="BridgeLogs" type="Sprite2D" parent="."]
-scale = Vector2(1.39063, 1)
-texture = ExtResource("1_l2auo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BridgeLogs"]
-position = Vector2(1.43818, -17.9211)
-shape = SubResource("RectangleShape2D_soi0b")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="BridgeLogs" type="Sprite2D" parent="StaticBody2D"]
 position = Vector2(-89, 0)
 scale = Vector2(1.39063, 1)
 texture = ExtResource("1_l2auo")
 
-[node name="BridgeLogs2" type="Sprite2D" parent="."]
-position = Vector2(87, 0)
-scale = Vector2(1.39063, 1)
+[node name="BridgeLogs2" type="Sprite2D" parent="BridgeLogs"]
+position = Vector2(126.561, 0)
 texture = ExtResource("1_l2auo")
 
-[node name="BridgeLogs3" type="Sprite2D" parent="."]
-position = Vector2(-177, 0)
-scale = Vector2(1.39063, 1)
+[node name="BridgeLogs3" type="Sprite2D" parent="BridgeLogs"]
+position = Vector2(-63.2807, 0)
 texture = ExtResource("1_l2auo")
 
-[node name="BridgeLogs4" type="Sprite2D" parent="."]
-position = Vector2(175, 0)
-scale = Vector2(1.39063, 1)
+[node name="BridgeLogs4" type="Sprite2D" parent="BridgeLogs"]
+position = Vector2(189.842, 0)
 texture = ExtResource("1_l2auo")
 
-[node name="BridgeLogs5" type="Sprite2D" parent="."]
-position = Vector2(263, 0)
-scale = Vector2(1.39063, 1)
+[node name="BridgeLogs5" type="Sprite2D" parent="BridgeLogs"]
+position = Vector2(253.123, 0)
 texture = ExtResource("1_l2auo")
 
-[node name="BridgeLogs6" type="Sprite2D" parent="."]
-position = Vector2(-261, 0)
-scale = Vector2(1.39063, 1)
+[node name="BridgeLogs6" type="Sprite2D" parent="BridgeLogs"]
+position = Vector2(-123.685, 0)
 texture = ExtResource("1_l2auo")
+
+[node name="BridgeLogs" type="Sprite2D" parent="BridgeLogs"]
+position = Vector2(63.9998, -1.90735e-06)
+texture = ExtResource("1_l2auo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.99998, -17.9211)
+scale = Vector2(1.39063, 1)
+shape = SubResource("RectangleShape2D_soi0b")

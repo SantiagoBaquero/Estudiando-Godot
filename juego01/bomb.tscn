@@ -10,8 +10,8 @@ radius = 39.9089
 script = ExtResource("1_4fn8o")
 
 [node name="Bomb4" type="Sprite2D" parent="."]
-position = Vector2(-3, -8)
-scale = Vector2(0.371962, 0.327009)
+position = Vector2(-1.40278, -6.96429)
+scale = Vector2(0.396919, 0.343192)
 texture = ExtResource("2_4fn8o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
