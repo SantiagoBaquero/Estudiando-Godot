@@ -3,157 +3,99 @@
 [ext_resource type="Texture2D" uid="uid://m0gs2mtarcg0" path="res://kenney_new-platformer-pack-1.0/Sprites/Enemies/Double/barnacle_attack_a.png" id="1_40twr"]
 [ext_resource type="Script" uid="uid://b51jfw2ebfk6" path="res://jefe.gd" id="1_vglgk"]
 [ext_resource type="Texture2D" uid="uid://duiccgj4adxe8" path="res://kenney_new-platformer-pack-1.0/Sprites/Tiles/Double/bomb.png" id="2_vglgk"]
-[ext_resource type="Texture2D" uid="uid://ihhgba3yawej" path="res://kenney_new-platformer-pack-1.0/Vector/Enemies/snail_shell.svg" id="3_454t3"]
+[ext_resource type="Texture2D" uid="uid://dvhntdto25omd" path="res://kenney_new-platformer-pack-1.0/Sprites/Enemies/Default/snail_shell.png" id="3_y5m53"]
+[ext_resource type="Texture2D" uid="uid://bm60ujtfk8707" path="res://kenney_new-platformer-pack-1.0/Vector/Characters/character_beige_climb_a.svg" id="5_y5m53"]
 
-[sub_resource type="Animation" id="Animation_vglgk"]
+[sub_resource type="Animation" id="Animation_hgtak"]
 resource_name = "Reposo"
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BarnacleAttackA/SnailShell:position")
+tracks/0/path = NodePath("BarnacleAttackA/SnailShell/LanzaBomb:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.333333, 0.666667, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(-17.2973, 41.0566), Vector2(-13.8378, 39.8491), Vector2(-17.2973, 36.2264), Vector2(-16.1441, 45.8868)]
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BarnacleAttackA/SnailShell/Bomb4:visible")
+tracks/1/path = NodePath("BarnacleAttackA/SnailShell:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"times": PackedFloat32Array(0, 0.333333, 0.633333, 0.966667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-23.0631, 49.5094), Vector2(-65.7297, 48.3019), Vector2(-5.76577, -38.6415), Vector2(48.4324, 33.8113)]
 }
 
-[sub_resource type="Animation" id="Animation_454t3"]
+[sub_resource type="Animation" id="Animation_piwxy"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BarnacleAttackA/SnailShell/Bomb4:position")
+tracks/0/path = NodePath("BarnacleAttackA/SnailShell/LanzaBomb:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(39.2072, 42.2641)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("BarnacleAttackA:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(139, 54)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("BarnacleAttackA/SnailShell:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-17.2973, 41.0566)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("BarnacleAttackA/SnailShell/Bomb4:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
 }
-
-[sub_resource type="Animation" id="Animation_y5m53"]
-resource_name = "Lanzar"
-length = 1.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("BarnacleAttackA/SnailShell:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.0333333, 0.4, 0.8, 1.46667),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(16.1441, 42.2641), Vector2(-50.7387, 38.6415), Vector2(-4.61261, -30.1887), Vector2(59.9639, 37.434)]
-}
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BarnacleAttackA/SnailShell/Bomb4:visible")
+tracks/1/path = NodePath("BarnacleAttackA/SnailShell:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [false, true, false]
-}
-tracks/2/type = "method"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(1.46667),
+"times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"launch_bomb"
-}]
+"update": 0,
+"values": [Vector2(-23.0631, 49.5094)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_y5m53"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_akyrn"]
 _data = {
-&"Lanzar": SubResource("Animation_y5m53"),
-&"RESET": SubResource("Animation_454t3"),
-&"Reposo": SubResource("Animation_vglgk")
+&"RESET": SubResource("Animation_piwxy"),
+&"Reposo": SubResource("Animation_hgtak")
 }
 
-[node name="Node2D" type="Node2D"]
+[node name="Boss" type="Node2D"]
 script = ExtResource("1_vglgk")
 
 [node name="BarnacleAttackA" type="Sprite2D" parent="."]
-position = Vector2(139, 54)
+position = Vector2(148, 50)
 scale = Vector2(0.867188, 0.828125)
 texture = ExtResource("1_40twr")
 
 [node name="SnailShell" type="Sprite2D" parent="BarnacleAttackA"]
-position = Vector2(-17.2973, 41.0566)
-rotation = -1.78612
-scale = Vector2(0.433009, 0.433472)
-skew = -0.0200649
-texture = ExtResource("3_454t3")
+position = Vector2(-23.0631, 49.5094)
+rotation = -2.01686
+scale = Vector2(0.556344, 0.463885)
+skew = -0.0369034
+texture = ExtResource("3_y5m53")
 
-[node name="Bomb4" type="Sprite2D" parent="BarnacleAttackA/SnailShell"]
-position = Vector2(39.2072, 42.2641)
-rotation = 1.80538
-scale = Vector2(0.994092, 0.908086)
-skew = -0.0185268
+[node name="LanzaBomb" type="Sprite2D" parent="BarnacleAttackA/SnailShell"]
+position = Vector2(15.8503, 45.7498)
+rotation = 1.97624
+scale = Vector2(0.908386, 0.728502)
+skew = 0.123294
 texture = ExtResource("2_vglgk")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="CharacterBeigeClimbA" type="Sprite2D" parent="."]
+position = Vector2(-108, 6)
+scale = Vector2(0.171875, 0.164063)
+texture = ExtResource("5_y5m53")
 
 [node name="Bomb2" type="Sprite2D" parent="."]
 position = Vector2(65, 70)
@@ -170,7 +112,7 @@ position = Vector2(25.0873, 30.274)
 scale = Vector2(0.971705, 0.781216)
 texture = ExtResource("2_vglgk")
 
-[node name="Bomb" type="Sprite2D" parent="Bomb2"]
+[node name="Bomba" type="Sprite2D" parent="Bomb2"]
 position = Vector2(-49.4725, 53.0157)
 scale = Vector2(0.949928, 0.937569)
 texture = ExtResource("2_vglgk")
@@ -182,11 +124,7 @@ texture = ExtResource("2_vglgk")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-&"": SubResource("AnimationLibrary_y5m53")
+&"": SubResource("AnimationLibrary_akyrn")
 }
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 2.0
-autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
