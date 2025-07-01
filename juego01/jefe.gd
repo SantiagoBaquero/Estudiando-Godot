@@ -5,11 +5,11 @@ extends Node2D
 const ESCENA_BOMB = preload("res://bomb.tscn")	
 
 func _process(delta):
-	animation_player.play("Reposo")
-	launch_bomb()
+	animation_player.play("Lanzar")
+	
 
 func launch_bomb():
 	var instancia_bomb = ESCENA_BOMB.instantiate()
-	instancia_bomb.position =$BarnacleAttackA/SnailShell.position
+	instancia_bomb.global_position =$BarnacleAttackA/SnailShell.global_position
 	add_child(instancia_bomb)
 	
