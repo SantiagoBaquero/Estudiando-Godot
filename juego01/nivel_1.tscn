@@ -16,13 +16,13 @@
 [node name="Decora" type="Node2D" parent="."]
 
 [node name="BackgroundClouds" type="Sprite2D" parent="Decora"]
-position = Vector2(508.5, 387.5)
-scale = Vector2(5.58203, 3.55859)
+position = Vector2(508.5, 485)
+scale = Vector2(5.58203, 4.32031)
 texture = ExtResource("1_h0wtr")
 
-[node name="BackgroundClouds3" type="Sprite2D" parent="Decora"]
-position = Vector2(1830, 388)
-scale = Vector2(4.77344, 3.55859)
+[node name="BackgroundClouds" type="Sprite2D" parent="Decora/BackgroundClouds"]
+position = Vector2(0.627011, -235.908)
+scale = Vector2(1.00048, 0.851228)
 texture = ExtResource("1_h0wtr")
 
 [node name="Cactus2" type="Sprite2D" parent="Decora"]
@@ -66,7 +66,7 @@ position = Vector2(828, 713)
 rotation = -0.127409
 
 [node name="SueloEle" parent="Suelo" instance=ExtResource("1_m2gv8")]
-position = Vector2(2105, 207)
+position = Vector2(711, 242)
 rotation = -0.127409
 
 [node name="Plataforma" type="Node2D" parent="."]
@@ -79,12 +79,12 @@ position = Vector2(1071, 509)
 rotation = -0.253073
 
 [node name="StaticBody2D5" parent="Plataforma" instance=ExtResource("2_320mp")]
-position = Vector2(1560, 333)
-rotation = -0.253073
+position = Vector2(189, 404)
+rotation = -5.71072
 
 [node name="StaticBody2D6" parent="Plataforma" instance=ExtResource("2_320mp")]
-position = Vector2(1322, 421)
-rotation = -0.506145
+position = Vector2(468, 511)
+rotation = 0.254818
 
 [node name="Obstaculo" type="Node2D" parent="."]
 
@@ -101,16 +101,20 @@ position = Vector2(208, 660)
 position = Vector2(210, 664)
 rotation = 2.30451
 limit_left = -1
-limit_top = 0
 limit_bottom = 1000
 script = ExtResource("7_6epq6")
 object_to_follow = NodePath("../PersonajePrincipal")
 
 [node name="Node2D" parent="." instance=ExtResource("8_vfns5")]
-position = Vector2(1666, -4)
+position = Vector2(118, -111)
+rotation = 0.120428
 
 [node name="RigidBody2D" parent="." instance=ExtResource("3_kd3qp")]
 position = Vector2(825, 293)
 
 [node name="RigidBody2D2" parent="." instance=ExtResource("3_kd3qp")]
 position = Vector2(1129, 342)
+
+[node name="SueloEle" parent="." instance=ExtResource("1_m2gv8")]
+position = Vector2(366, 2.00002)
+rotation = 0.127409
