@@ -16,8 +16,8 @@
 [node name="Decora" type="Node2D" parent="."]
 
 [node name="BackgroundClouds" type="Sprite2D" parent="Decora"]
-position = Vector2(508.5, 485)
-scale = Vector2(5.58203, 4.32031)
+position = Vector2(654.5, 485)
+scale = Vector2(6.72265, 4.32031)
 texture = ExtResource("1_h0wtr")
 
 [node name="BackgroundClouds" type="Sprite2D" parent="Decora/BackgroundClouds"]
